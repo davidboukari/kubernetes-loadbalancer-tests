@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx-2
+  labels:
+    app: www-api
+spec:
+  containers:
+  - name: www
+    image: nginx:1.20.1
+    ports:
+    - containerPort: 80
